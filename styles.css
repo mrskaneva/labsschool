@@ -1,0 +1,384 @@
+/* Text */
+
+body {
+  display: flexbox;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  color: #333;
+  /* Set a default text color for better readability*/
+  text-align: center;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 2rem;
+  margin: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: hsl(351, 100%, 86%);
+  /* Set a color for heading elements */
+}
+
+a {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #007BFF;
+  /* Set a color for links */
+}
+
+p {
+  display: inline-block;
+  justify-content: center;
+  font-size: 1.2rem;
+  margin: 1.5rem;
+  /* Add bottom margin to paragraphs for better spacing */
+  line-height: 1.6;
+  /* Set line height for better readability */
+  max-width: 70%;
+  color: lightgray;
+
+}
+
+/* Site Nav */
+
+#site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: hsl(351, 100%, 86%);
+  border-bottom: 1px solid white;
+}
+
+.logo-img {
+  max-width: 6.25rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.nav-li {
+  margin-right: 1.25rem;
+  /* Adjust the spacing between list items */
+  text-decoration: none;
+  color: #fff;
+  /* Set the color of the text */
+  font-size: 1.2rem;
+}
+
+.nav-li:hover {
+  text-decoration: underline;
+  /* Add an underline effect on hover */
+  color: #fff;
+}
+
+/* Hero */
+
+.hero {
+  position: relative;
+  margin-top: 0;
+  /* Remove the default margin */
+}
+
+.banner-img {
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  font-size: 3rem;
+  top: 4.375rem;
+  left: 4.375rem;
+  z-index: 1;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 1rem;
+}
+
+.hero h2 {
+  position: absolute;
+  font-size: 1rem;
+  top: 8rem;
+  left: 4.375rem;
+  z-index: 1;
+  color: #fff;
+  margin: 1rem;
+  /* Remove margin to ensure precise positioning */
+}
+
+/* Smaller Screens */
+
+@media only screen and (max-width: 480px) {
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    /* Add bottom margin to paragraphs for better spacing */
+    line-height: 1.6;
+    /* Set line height for better readability */
+  }
+
+  .nav-li {
+    color: hsl(351, 100%, 86%);
+  }
+
+  img {
+    max-width: 100%;
+    /* Ensure images don't exceed their parent container */
+    height: auto;
+    /* Maintain the aspect ratio of the image */
+  }
+}
+
+/* Larger Screens */
+
+@media only screen and (min-width: 1200px) {
+  .hero h1 {
+    font-size: 8rem;
+    /* Increase font size for larger screens */
+  }
+
+  .hero h2 {
+    top: 14rem;
+    left: 4.375rem;
+    font-size: 2rem;
+    /* Increase font size for larger screens */
+  }
+}
+
+/* Sections */
+
+section {
+  margin-bottom: 2rem;
+  /* Increase the space between sections */
+}
+
+/* Other */
+/* Default styling for images and containers */
+
+img {
+  max-width: 100%;
+  /* Ensure images don't exceed their parent container */
+  height: auto;
+  /* Maintain the aspect ratio of the image */
+}
+
+.container {
+  width: 80%;
+  /* Set a default width for the container */
+  margin: 0 auto;
+  /* Center the container on the page */
+}
+
+/* Responsive rules for smaller screens */
+
+@media only screen and (max-width: 768px) {
+  img {
+    width: 100%;
+    /* Make images fill the entire width of their container */
+  }
+
+  .container {
+    width: 90%;
+    /* Adjust the container width for smaller screens */
+  }
+}
+
+/* Additional responsive rules for even smaller screens if needed */
+
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 95%;
+    /* Further adjust the container width for very small screens */
+  }
+}
+
+/* Sections */
+
+section {
+  margin-bottom: 2rem;
+  /* Increase the space between sections */
+}
+
+/* About Us */
+
+.about-us li {
+  display: block;
+  justify-content: center;
+}
+
+.about-us li img {
+  max-width: 100%;
+  /* Ensure images don't exceed their parent container */
+  height: auto;
+  /* Maintain the aspect ratio of the image */
+  width: 100%;
+  /* Make sure the image takes up the full width of its container */
+}
+/* LABS UNORDERED LIST */
+
+.h1-labs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 100%;
+  margin: 0;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  color: #fff;
+  background-color: hsl(351, 100%, 86%);
+}
+
+.labs-img {
+  display: block;
+  margin: 2rem auto; /* Set margin to auto to center horizontally */
+}
+
+.labs-ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.labs-ul li {
+  display: inline-block;
+  margin: 2rem;
+  color: lightgray;
+  text-align: center;
+}
+
+
+/* LABS Philsophy */
+
+.labs-phil {
+  color: #fff;
+  background-image: url(https://images.squarespace-cdn.com/content/v1/54d09bf9e4b0384b4f8511d5/1448270667118-Z35L95GAOVI4LICR3MWV/bigstock-Young-Dancers-Ballerinas-In-Cl-87129815.jpg?format=1500w);
+  margin: 0;
+  padding: 2rem;
+  max-width: 100%;
+}
+
+.labs-phil p {
+  color: #fff;
+}
+
+/* Team */
+
+.team-h1 {
+  border: solid 2px;
+  border-width: 100%;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  font-size: 3rem;
+  padding: 2rem;
+}
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  color: #fff;
+  background-color: hsl(351, 100%, 86%);
+  padding: 2rem;
+  /* Add padding to the team section */
+}
+
+.team h1,
+.team h2 {
+  color: #fff;
+  text-decoration: underline;
+  /* Set text color for headings in the team section */
+}
+
+.team img {
+  max-width: 100%;
+  /* Make sure images don't exceed their parent container */
+  height: auto;
+  margin-bottom: 1rem;
+  /* Add bottom margin to images in the team section */
+}
+
+.team p {
+  color: #fff;
+  text-align: center;
+}
+
+/* Contact */
+
+.contact {
+  color: #fff;
+  background-image: url(https://st4.depositphotos.com/3662505/21990/i/450/depositphotos_219900236-stock-photo-ballet-training-group-young-girls.jpg);
+  padding: 1rem;
+  
+}
+
+/* Skeuomorphic Button Style */
+
+.skeuomorphic-button {
+  display: inline-block;
+  padding: 0.6rem 1.2rem; /* Adjusted padding for a smaller size */
+  font-size: 1rem; /* Adjusted font size for a smaller size */
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  background-color: hsl(351, 100%, 86%);
+  color: #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  margin: 2rem;
+}
+
+.skeuomorphic-button:hover {
+  background-color: hsl(351, 100%, 76%); /* Adjusted color for hover effect */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Above Footer */
+
+.above-footer {
+  font-size: 0.75rem;
+}
+
+/* Footer */
+
+footer {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  height: 3.875rem;
+  background-color: hsl(351, 100%, 86%);
+  color: #fff;
+  padding: 1.5rem 2rem;
+  margin-top: 2rem; /* Add top margin to the footer */
+  
+}
+
+footer .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 0.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #fff;
+}
+
+.footer p {
+  color: #fff;
+  margin: 0 auto;
+  font-size: 0.75rem;
+  
+}
